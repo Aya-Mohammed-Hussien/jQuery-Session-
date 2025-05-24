@@ -41,8 +41,45 @@
 //   });
 // });
 
+// $(".test").hide(1000);
+// $(".test").show(1000);
+// $(".test").toggle(1000);
+// $(".test").toggle(1000);
 
-$(".test").hide(1000);
-$(".test").show(1000);
-$(".test").toggle(1000);
-$(".test").toggle(1000);
+
+//Exercise 
+// $("section").animate({width:"100%"} , 1000).animate({height:"100vh"} , 1000 , function (){
+//     $(".container > h3").show(1000 , function(){
+//         $("p").fadeIn(1000 , function (){
+//             $(".col-md-4").slideDown(1000 , function(){
+//                 $("h3").show(1000)
+//             });
+//         }
+//         );
+//     });
+// })
+
+
+
+// jQuery Methods => Functions we can apply on any element selected by jQuery 
+// 1- Getters / setters 
+//  html()    html("Content")
+//  text()    text("content")
+//  attr(the name of attr)   attr(the name of attr , the new value)
+//  val()      val(new value)
+//  css(name of property)    css(name od property , new value)
+
+// $(".test").html("<h2>Hello World</h2>");
+// console.log($(".test").html())
+
+// $(".test").text("<h2>Hello World</h2>");
+// console.log($(".test").text())
+
+// console.log( $("img").attr("src"))
+// $("img").attr("src" , "../images/meal-4.jpg")
+
+// $("input").val("Aya Updated222");
+// console.log($("input").val());
+
+// console.log($(".test").css("backgroundColor"));
+// $(".test").css("backgroundColor" , "red")
