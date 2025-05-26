@@ -61,6 +61,7 @@
 
 
 
+
 // jQuery Methods => Functions we can apply on any element selected by jQuery 
 // 1- Getters / setters 
 //  html()    html("Content")
@@ -68,6 +69,19 @@
 //  attr(the name of attr)   attr(the name of attr , the new value)
 //  val()      val(new value)
 //  css(name of property)    css(name od property , new value)
+
+// 2- Dom methods => addClass removeClass toggleClass empty remove append prepend before after
+
+// 3- Dimensions width / height have the same methods 
+//  width => calculate the actual width of the element 
+//  innerWidth => calculate actual width + padding only 
+//  outerWidth => calculate actual width + padding + border 
+//  outerWidth(true) => calculate actual width + padding + border + margin
+
+
+
+
+
 
 // $(".test").html("<h2>Hello World</h2>");
 // console.log($(".test").html())
@@ -83,3 +97,44 @@
 
 // console.log($(".test").css("backgroundColor"));
 // $(".test").css("backgroundColor" , "red")
+
+// $(".test").toggleClass("bg-black")
+// $(".test").empty()
+// $(".test").remove()
+// $(".test").append("<h1>Hi from jQuery</h1>")
+// $(".test").prepend("<h1>hiii</h1>")
+// $(".test").before("<h1>hiii</h1>")
+// $(".test").after("<h1>hiii</h1>")
+// console.log($(".test").width())
+// console.log($(".test").innerWidth())
+// console.log($(".test").outerWidth())
+// console.log($(".test").outerWidth(true))
+
+
+// Traversing in jQuery ?
+// 1- next() / nextAll() / nextUntil()
+// 2- prev() / prevAll() / prevUntil()
+// 3- siblings()
+// 4- parent()
+// 5- parents()
+// 6-parentsUntil() => selector 
+// 7- children() => direct child onlyyyy
+// 8- find() => selector 
+// 9- eq() => index
+// 10- not() => selector to be excluded 
+
+
+// $("#demo").next().css("borderColor" , "Green");
+// $("#demo").nextAll().css("borderColor" , "Green");
+// $("#demo").prev().css("borderColor" , "red");
+// $("#demo").prevAll().css("borderColor" , "red");
+// $(".test").children().css("borderColor" , "red");
+// $(".test").find(".hamada").css("borderColor" , "red")
+// $(".test .hamada").css("borderColor" , "red")
+
+//Exercise
+// $("#demo").click(function(e){
+// $(e.target).parent().next().find(".hamada").css("borderColor" , "red")
+// })
+
+// $("#demo").siblings().not(".hamada").css("borderColor" , "Green");
